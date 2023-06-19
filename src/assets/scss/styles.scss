@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&family=Tilt+Prism&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #242742;
+}
+
+img{
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+li{
+ list-style: none;
+
+ &.container__app__card__form__li{
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.5rem 0px 1rem;
+
+  .bg-outlined{
+    background-color: #FF9154;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+    padding: 0.1rem;
+  }
+ }
+}
+
+.container__app{
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+
+  &__card{
+    align-items: center;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: #fe625496 0px 0px 0.25em, #fe62549e 0px 0.25em 1em;
+    display: flex;
+    font-family: 'Roboto Slab', serif;
+    height: 80vh;
+    justify-content: space-around;
+    min-width: 320px;
+    width: 800px;
+
+    &__form{
+      border-radius: 1rem ;
+      display: flex;
+      flex-direction: column;
+      height: 90%;
+      justify-content: space-around;
+      width: 44%;
+
+      &__title{
+        color: #242742;
+        font-family: 'Tilt Prism', cursive;
+        font-size: 4rem;
+        text-align: center;
+      }
+
+      &__formulario{
+        display: flex;
+        flex-direction: column;
+
+        &__input{
+          border-radius: 0.3rem;
+          border: none;
+          box-shadow: #0000003d 0px 3px 8px;
+          margin: 0.5rem 0px 1rem;
+          padding: 0.9rem;
+        }
+
+        &__btn{
+          background-color: #6BD4A8;
+          border-radius: 0.3rem;
+          border: none;
+          box-shadow: #00000012 0px 1px 2px, #00000012 0px 2px 4px, #00000012 0px 4px 8px, #00000012 0px 8px 16px, #00000012 0px 16px 32px, #00000012 0px 32px 64px;
+          color: #fff;
+          padding: 1rem;
+        }
+      }
+    }
+
+    &__figure{
+      background-color: #0073ff;
+      border-radius: 1rem;
+      display: flex;
+      height: 90%;
+      width: 44%;
+    
+      &__img{
+        border-radius: 1rem;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+      }
+    }
+  }
+    
+}
